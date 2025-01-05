@@ -2,8 +2,6 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
-
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
@@ -44,36 +42,32 @@ yarn ios
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+# Application walkthrough
 
-## Step 3: Modifying your App
+ __NOTE__: This is a very basic application created for demonstration purposes. Enhancements such as adding icons, additional screens, more functionalities, and improved UI can significantly increase the application's functionality and visual appeal.
 
-Now that you have successfully run the app, let's modify it.
+## Products Screen
+### Features
+- The main products screen displays a list of products in a grid format.
+- Users can toggle the view of the product listing by pressing the Switch to List View button located at the top of the screen.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### Technology Stack
+- __TypeScript__: Utilized for improved type checking and ensuring better code quality.
+- __Redux Toolkit__: Used to manage application state effectively.
+- __Thunk Middleware__: Handles side effects such as API calls.
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+### Data Handling
+- The product data is fetched using a dummy API for demonstration purposes.
 
-## Congratulations! :tada:
+### Folder Structure
 
-You've successfully run and modified your React Native App. :partying_face:
+- The application follows the atomic design folder structure:
 
-### Now what?
+    - __Atoms__: Smallest, most basic components (e.g., buttons, input fields).
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+    - __Molecules__: Slightly larger components composed of multiple atoms (e.g., product cards).
 
-# Troubleshooting
+    - __Organisms__: Complex components made up of molecules and atoms, representing significant sections of the UI (e.g., product grids or lists).
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+This modular structure enhances code reusability, maintainability, and scalability.
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
